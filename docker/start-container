@@ -22,8 +22,8 @@ if [ ! "$?" -eq 0 ]; then
     php artisan key:generate
 fi
 
-if [ $# -gt 0 ];then
-    exec gosu $WWWUSER "$@"
-else
-    /usr/bin/supervisord
-fi
+# if [ $# -gt 0 ];then
+#     exec gosu $WWWUSER "$@"
+# else
+#     /usr/bin/supervisord
+# fi
